@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body,
+button {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}

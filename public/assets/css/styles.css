@@ -1,0 +1,190 @@
+@import "_reset.css";
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--violet) url(../images/bg-desktop.svg) no-repeat center;
+}
+
+header,
+main,
+footer {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 54px 0;
+}
+
+.logo {
+  width: 226px;
+  height: 52px;
+}
+
+.hero {
+  display: flex;
+}
+
+.hero--image {
+  flex: 1.5;
+  align-self: center;
+  max-width: 709px;
+}
+
+.hero--content {
+  flex: 1;
+  margin: 40px 0 0 60px;
+}
+
+.hero--content h1,
+.hero--content h2 {
+  font-size: 40px;
+}
+
+.hero--content h2 {
+  margin-bottom: 20px;
+}
+
+.hero--content p {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.hero--content button {
+  width: 200px;
+  height: 56px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: var(--violet);
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0 40px 0;
+}
+
+.social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+.social-links a + a {
+  margin-left: 14px;
+}
+
+@media screen and (max-width: 1280px) {
+  header,
+  main,
+  footer {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .hero--image img {
+    max-width: 709px;
+    width: 100%;
+  }
+
+  .hero--content {
+    margin-left: 40px;
+  }
+
+  .hero--content h1,
+  .hero--content h2 {
+    font-size: 30px;
+  }
+
+  .hero--content button {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .social-links a {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero--content {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .hero--content h1,
+  .hero--content h2 {
+    font-size: 26px;
+  }
+
+  .hero--content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: var(--violet) url(../images/bg-mobile.svg) no-repeat top
+      center/contain;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero--content {
+    margin: 60px 0 0;
+  }
+
+  .hero--content p,
+  .hero--content button {
+    font-size: 14px;
+  }
+
+  footer {
+    justify-content: center;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    padding: 40px 60px 60px 40px;
+  }
+
+  .logo {
+    width: 146px;
+    height: 40px;
+  }
+
+  .hero--content h1,
+  .hero--content h2 {
+    font-size: 22px;
+  }
+
+  .hero--content button {
+    height: 40px;
+  }
+}
