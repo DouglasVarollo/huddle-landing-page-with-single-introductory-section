@@ -68,6 +68,7 @@ header {
   color: var(--violet);
   background-color: #fff;
   border: 1px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -162,6 +163,10 @@ footer {
   .hero--content button {
     font-size: 14px;
   }
+
+  .hero--content button {
+	  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+	}
 
   footer {
     justify-content: center;
